@@ -3,8 +3,9 @@
 		<title>BlooTooth</title>
 		<script language="Javascript">
 		function onButtonClick(){
-			navigator.bluetooth.requestDevice({acceptAllDevice})
-			.then(device => { /* ... */ })
+			alert("tapped");
+			navigator.bluetooth.requestDevice({acceptAllDevices});
+			.then(device => { /* ... */ });
 			.catch(error => { console.log(error); });
 		}
 		</script>
