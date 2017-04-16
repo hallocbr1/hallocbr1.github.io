@@ -1,0 +1,14 @@
+<html lang ="en">
+	<head>
+		<title>BlooTooth</title>
+		<script language="Javascript">
+		function onButtonClick(){
+			navigator.bluetooth.requestDevice({acceptAllDevice})
+			.then(device => { /* ... */ })
+			.catch(error => { console.log(error); });
+		}
+		</script>
+	</head>
+		<button type="button" onclick=onButtonClick()>Search</button>
+	</body>
+</html>	
